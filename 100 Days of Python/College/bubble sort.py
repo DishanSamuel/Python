@@ -17,4 +17,4 @@ while loop:
             print("Invalid input")
             break
         list.append(numbers)
-print(list)
+swap()
