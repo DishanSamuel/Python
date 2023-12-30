@@ -1,10 +1,6 @@
+def swap():
+    print(list) 
 global list
-def swap(n):
-    temp = 0
-    temp = list[n]
-    list[n] = list[n+1]
-    list[n+1] = temp
-    
 list = []
 numbers = int
 input_code = 0
@@ -21,9 +17,4 @@ while loop:
             print("Invalid input")
             break
         list.append(numbers)
-
-for i in range(0,len(list)-1):
-    for j in range(0,len(list)-1-i):
-        if list[j] > list[j+1]:
-            swap(j)
-print(list)
+swap()
