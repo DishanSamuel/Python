@@ -12,6 +12,7 @@ def input_numbers():
         input_code = input('Enter the numbers to sort : ')
         if input_code == 'end':
             loop = False
+            print('okay')
             break
         elif input_code != 'end':
             try:
@@ -26,7 +27,13 @@ def main():
             if list[j] > list[j+1]:
                 swap(j)
 
+#only for this module
+if __name__ == "__main__":
+    input_numbers()
+    print(list)
+    main()
+    print(list)
+
+#for binary search module
 input_numbers()
-print(list)
 main()
-print(list)
