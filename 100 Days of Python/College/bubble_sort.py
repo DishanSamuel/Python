@@ -17,8 +17,9 @@ def input_numbers():
         elif input_code != 'end':
             try:
                 numbers = int(input_code)
-            except ValueError:
+            except Exception as e:
                 print("Invalid input")
+                print(e)
                 break
             list.append(numbers)
 def main():
