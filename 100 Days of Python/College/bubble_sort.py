@@ -17,7 +17,7 @@ def input_numbers():
         elif input_code != 'end':
             try:
                 numbers = int(input_code)
-            except Exception as e:
+            except Exception as e:                              # specific errors can also be written instead of "Exception as e"
                 print("Invalid input")
                 print(e)
                 break
